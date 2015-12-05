@@ -4,14 +4,55 @@
 	<title>My first webpage</title>
 	<link rel="stylesheet" type="text/css" href="mypage.css">
 
+	<style> 
+	h1{
+		border: 1px solid black;
+		font-family: "Helvetica-Neue", helvetica, sans-serif;
+		text-align: center;
+	}
+	body{
+		font-family: "Helvetica-Neue", helvetica, sans-serif;
+		text-align: center;
+	}
+	img{border: 3px solid black;
+		border-radius: 40px;
+	}
+	table.center{
+		margin-left:auto;
+		margin-right: auto;
+	}
+	ul{
+		list-style: none;
+	}
+		</style>
+
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70631051-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </head>
 
 <body> 
-<h1>ABOUT ME</h1>
 
-	<button type="submit" class="mybtn" data-target="Hobbies.html">HOBBIES</button>
+<h1>MEGAN'S WEBPAGE</h1>
+
+		<p>Hello! I'm Megan. Welcome to my webpage!</p>
+
+	<p> <img alt='My Photo' src='4.jpg' width=400> </p>
+
+	<h2><em>ABOUT ME</em></h2>
+	<p>
+		<button type="submit" class="mybtn" data-target="Hobbies.html">HOBBIES</button>
+	
 	<script> 
 	$('.mybtn').on('click', function(event){
 	event.preventDefault();
@@ -19,26 +60,12 @@
 	location.replace(url);
 	});
 	</script>
-
-	<p>Hello! I am Megan. Welcome to my webpage.</p>
-
-	<p> <img alt='My Photo' src='4.jpg' width=400> </p>
-
-	<h2><em>My Hobbies</em></h2>
-	<p>
-	<ul> 
-		<li>Playing Guitar</li>
-		<li>Programming</li>
-		<li>Travelling</li>
-		<li>Music</li>
-		<li>Mathematics</li>
-		<li>Reading</li>
-	</ul>
-	</p>
+		
+			</p>
 
 	<h2><em>Educational background</em></h2>
 	<p>
-	<table>
+	<table class="center">
 		<thead>
 		 <tr>
 		 	<th><b>YEAR</b></th>
@@ -61,7 +88,12 @@
 		<h2>Projects</h2>
 		<ul>
 			<li>Twenty-First Century Progression of Hilbert's Third Problem</li>
-			<li>Modelling og the Gender Wage Gap</li>
+			<li>Modelling of the Gender Wage Gap</li> </p>
+
+	<p> <img alt='beach photo' src='beach3.jpg' width=400> </p>
+
+	<p>To subscribe to my monthly Newsletter, please submit your email address:</p>
+	<input type="email" placeholder="Your Email"> <input type="submit">
 
 	</body>
 
